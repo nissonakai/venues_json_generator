@@ -11,6 +11,7 @@ a = Analysis(['exe.py'],
                 ('convert.py','.'),
                 ('layouts.py','.'),
                 ('util.py','.'),
+                ('venues_json.ico', '.')
              ],
              hiddenimports=[],
              hookspath=[],
@@ -34,4 +35,5 @@ exe = EXE(pyz,
           strip=False,
           upx=True,
           runtime_tmpdir=None,
-          console=False)
+          console=False,
+          icon="venues_json.ico")
